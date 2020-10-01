@@ -1,6 +1,6 @@
 # Python-Assistant
 
-![alt](https://github.com/anujdube12/Python-Assistant/blob/master/IronMan_wall.jpg)
+![alt](https://github.com/anujdube12/Jarvis-Voice-Assistant/blob/master/IronMan_wall.jpg)
 
 This is a AI Personal Assistant. This is as same as our google assistant. This program is completely developed in Python. It hold much more feature.
 
