@@ -6,7 +6,6 @@ import webbrowser
 import os.path
 import random as r
 import smtplib
-from pygame import mixer
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -93,14 +92,17 @@ if __name__=="__main__":
             code_path = "C:\\Users\\HP\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(code_path)
 
-       elif 'play music' in query:
-            speak('Playing Music ')
-            music_dir = 'full_path'
-            mixer.init()
-            mixer.music.load(music_dir)
-            mixer.music.play()
-        elif 'stop music' in query:
-            mixer.music.stop()
+        elif 'music' in query:
+            music = "E:\\music"
+            songs = os.listdir(music)
+            songs = list(songs)
+            # while 1:
+                # choice = int(input("Press 1 for playing song: "))
+            if 1:
+                song = r.choice(songs)
+                os.startfile(os.path.join(music, song))
+            else: 
+                speak("i am not able to play a music.")
                 
         elif 'email' in query:
             try:
